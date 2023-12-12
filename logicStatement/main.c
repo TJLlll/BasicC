@@ -50,7 +50,7 @@ int main()
     int huaweiP60 = 6000;
     
 
-    if (budget < applephone || budget > mi14Pro)  /* 或 */
+    if (budget < applephone || budget > mi14Pro)  /* 或,这里" < "," > "比||的运算级高，因此不需要将两边的条件括起来 */
     {
         printf ("i am happy, get a phone\n");
     }
@@ -101,7 +101,7 @@ int main()
 #endif
 
 #if 0
-    srand(time(NULL));
+    srand(time(NULL));      /* 使用当前时间作为种子，确保每次运行程序时生成不同的随机数序列 */
 
 
     /* 循环 */
@@ -125,6 +125,8 @@ int main()
 #endif
 
 #if 0
+
+
     srand(time(NULL));
 
     /* 编码规范：变量尽量使用驼峰式命名 */
